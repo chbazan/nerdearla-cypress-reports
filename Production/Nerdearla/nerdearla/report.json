@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2025-09-21T20:30:31.008Z",
-    "end": "2025-09-21T20:30:39.892Z",
-    "duration": 8884,
+    "start": "2025-09-21T21:02:05.223Z",
+    "end": "2025-09-21T21:02:13.862Z",
+    "duration": 8639,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "3f186d2b-abcd-45ab-8c23-0ecb291dfc57",
+      "uuid": "19ceb41b-62aa-4281-b67a-102a7934be1c",
       "title": "",
       "fullFile": "cypress/e2e/nerdearla/01_login.cy.js",
       "file": "cypress/e2e/nerdearla/01_login.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "0b27caed-f9c9-419b-83d8-fd4ad092c73b",
+          "uuid": "a1a8921f-bfda-483e-a9eb-b4f4de2cbbce",
           "title": "Login",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Login y preseteo de datos",
               "fullTitle": "Login Login y preseteo de datos",
               "timedOut": null,
-              "duration": 6542,
+              "duration": 6566,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "//cy.loginPOM(); vamos a usar este comando primero para mostrar la diferencia con session\ncy.loginSession();",
               "err": {},
-              "uuid": "0b042534-029a-40df-8683-1af7df883056",
-              "parentUUID": "0b27caed-f9c9-419b-83d8-fd4ad092c73b",
+              "uuid": "531ccc78-434f-4127-a876-e7d158014ae5",
+              "parentUUID": "a1a8921f-bfda-483e-a9eb-b4f4de2cbbce",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "0b042534-029a-40df-8683-1af7df883056"
+            "531ccc78-434f-4127-a876-e7d158014ae5"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 6542,
+          "duration": 6566,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
