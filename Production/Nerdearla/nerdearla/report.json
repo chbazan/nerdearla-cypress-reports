@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2025-09-21T21:02:05.223Z",
-    "end": "2025-09-21T21:02:13.862Z",
-    "duration": 8639,
+    "start": "2025-09-21T21:35:02.152Z",
+    "end": "2025-09-21T21:35:05.505Z",
+    "duration": 3353,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "19ceb41b-62aa-4281-b67a-102a7934be1c",
+      "uuid": "bde1f95a-d701-4e27-bdf9-9f43a900043a",
       "title": "",
       "fullFile": "cypress/e2e/nerdearla/01_login.cy.js",
       "file": "cypress/e2e/nerdearla/01_login.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "a1a8921f-bfda-483e-a9eb-b4f4de2cbbce",
+          "uuid": "8c673234-9f1e-4bbf-88d1-bdba16a6e375",
           "title": "Login",
           "fullFile": "",
           "file": "",
@@ -38,29 +38,29 @@
               "title": "Login y preseteo de datos",
               "fullTitle": "Login Login y preseteo de datos",
               "timedOut": null,
-              "duration": 6566,
+              "duration": 1300,
               "state": "passed",
-              "speed": "medium",
+              "speed": "fast",
               "pass": true,
               "fail": false,
               "pending": false,
               "context": null,
               "code": "//cy.loginPOM(); vamos a usar este comando primero para mostrar la diferencia con session\ncy.loginSession();",
               "err": {},
-              "uuid": "531ccc78-434f-4127-a876-e7d158014ae5",
-              "parentUUID": "a1a8921f-bfda-483e-a9eb-b4f4de2cbbce",
+              "uuid": "e966aef9-6469-4093-85d9-f4502a9b6214",
+              "parentUUID": "8c673234-9f1e-4bbf-88d1-bdba16a6e375",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "531ccc78-434f-4127-a876-e7d158014ae5"
+            "e966aef9-6469-4093-85d9-f4502a9b6214"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 6566,
+          "duration": 1300,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
