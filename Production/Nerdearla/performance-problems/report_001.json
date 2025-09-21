@@ -1,0 +1,166 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-09-21T21:16:43.816Z",
+    "end": "2025-09-21T21:16:53.983Z",
+    "duration": 10167,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "1f30012e-abd6-400b-a197-44142dcf6cef",
+      "title": "",
+      "fullFile": "cypress/e2e/performance_problems/home.cy.js",
+      "file": "cypress/e2e/performance_problems/home.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "dc608c29-4bbc-4703-ac6b-f3cf204c1b32",
+          "title": "Home",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login",
+              "fullTitle": "Home Login",
+              "timedOut": null,
+              "duration": 173,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.loginSession();",
+              "err": {},
+              "uuid": "55afbfca-6068-46de-b81d-9f51aff76f18",
+              "parentUUID": "dc608c29-4bbc-4703-ac6b-f3cf204c1b32",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Ingreso al home",
+              "fullTitle": "Home Ingreso al home",
+              "timedOut": null,
+              "duration": 5349,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(`https://www.saucedemo.com/v1/inventory.html`);\n_homePage.home.getInventoryItem().should('be.visible');\ncy.wait(5000);",
+              "err": {},
+              "uuid": "a7c89bd4-a196-47fd-8680-8bf1ee89e7ac",
+              "parentUUID": "dc608c29-4bbc-4703-ac6b-f3cf204c1b32",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Navegabilidad entre items mientras se añaden al carrito",
+              "fullTitle": "Home Navegabilidad entre items mientras se añaden al carrito",
+              "timedOut": null,
+              "duration": 1854,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.addAllItemsToCart();",
+              "err": {},
+              "uuid": "9e4ba100-e3f0-4193-9a29-3fe3579a0e7f",
+              "parentUUID": "dc608c29-4bbc-4703-ac6b-f3cf204c1b32",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Eliminar todos los items del carrito",
+              "fullTitle": "Home Eliminar todos los items del carrito",
+              "timedOut": null,
+              "duration": 468,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Validamos si el carrito tiene items\n_homePage.home.getCartIcon().then($badge => {\n  if ($badge.length > 0) {\n    cy.log(`Eliminando ${$badge.text()} items del carrito`);\n    // Click en todos los botones Remove visibles\n    _homePage.home.getRemoveBtn().should(\"be.visible\").click({\n      multiple: true\n    });\n  }\n});\n// Validamos que el carrito quedó vacío (el contador ya no existe)\n_homePage.home.getCartIconCounter().should(\"not.exist\");",
+              "err": {},
+              "uuid": "e4e069bb-b1bd-4701-905b-856bb385f4bf",
+              "parentUUID": "dc608c29-4bbc-4703-ac6b-f3cf204c1b32",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "55afbfca-6068-46de-b81d-9f51aff76f18",
+            "a7c89bd4-a196-47fd-8680-8bf1ee89e7ac",
+            "9e4ba100-e3f0-4193-9a29-3fe3579a0e7f",
+            "e4e069bb-b1bd-4701-905b-856bb385f4bf"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 7844,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "cleanReporterJson": false,
+        "html": true,
+        "json": true,
+        "reportFilename": "report",
+        "embeddedScreenshots": true,
+        "inlineAssets": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

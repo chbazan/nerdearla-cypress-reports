@@ -1,0 +1,223 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 7,
+    "passes": 7,
+    "pending": 0,
+    "failures": 0,
+    "start": "2025-09-21T21:16:56.036Z",
+    "end": "2025-09-21T21:17:35.094Z",
+    "duration": 39058,
+    "testsRegistered": 7,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f7056604-27b1-41c9-ab36-7d5a5d816ed3",
+      "title": "",
+      "fullFile": "cypress/e2e/performance_problems/purchase.cy.js",
+      "file": "cypress/e2e/performance_problems/purchase.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "69a126d9-197d-40ba-9bc9-7096680b33b4",
+          "title": "Compra",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login",
+              "fullTitle": "Compra Login",
+              "timedOut": null,
+              "duration": 98,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.loginSession();",
+              "err": {},
+              "uuid": "34e6d9a1-6755-4b33-b841-e7d5db43fdbe",
+              "parentUUID": "69a126d9-197d-40ba-9bc9-7096680b33b4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Ingreso al home",
+              "fullTitle": "Compra Ingreso al home",
+              "timedOut": null,
+              "duration": 5284,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(`https://www.saucedemo.com/v1/inventory.html`);\n_homePage.home.getInventoryItem().should('be.visible');\ncy.wait(5000);",
+              "err": {},
+              "uuid": "ac03c7e4-5802-40a4-97d9-f7f97712c44e",
+              "parentUUID": "69a126d9-197d-40ba-9bc9-7096680b33b4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Ingreso al carrito vacío",
+              "fullTitle": "Compra Ingreso al carrito vacío",
+              "timedOut": null,
+              "duration": 5232,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Ingresar al carrito sin tener items añadidos\n_homePage.home.clickCartIcon();\n// Volver al home\n_homePage.home.clickContinueShopping();\n_homePage.home.getInventoryItem().should(\"be.visible\");\ncy.wait(5000);",
+              "err": {},
+              "uuid": "8f8cf664-8635-409e-bed2-837d187cbf61",
+              "parentUUID": "69a126d9-197d-40ba-9bc9-7096680b33b4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Agregar todos los items al carrito",
+              "fullTitle": "Compra Agregar todos los items al carrito",
+              "timedOut": null,
+              "duration": 5477,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_homePage.home.getAddToCartBtn().should(\"be.visible\").click({\n  multiple: true\n});\ncy.wait(5000);",
+              "err": {},
+              "uuid": "8313d1c7-c1e9-481d-89a2-0901f8248c0e",
+              "parentUUID": "69a126d9-197d-40ba-9bc9-7096680b33b4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Ingresar al carrito lleno",
+              "fullTitle": "Compra Ingresar al carrito lleno",
+              "timedOut": null,
+              "duration": 5086,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Ingresar al carrito teniendo todos los items añadidos\n_homePage.home.clickCartIcon();\ncy.wait(5000);",
+              "err": {},
+              "uuid": "1acd69c4-22e6-49f7-a63b-3605376653e0",
+              "parentUUID": "69a126d9-197d-40ba-9bc9-7096680b33b4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Checkout de la compra",
+              "fullTitle": "Compra Checkout de la compra",
+              "timedOut": null,
+              "duration": 10924,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Checkout paso 1: Formulario de datos\n_purchasePage.purchase.clickCheckoutBtn();\n_purchasePage.purchase.typeFirstName(\"testName\");\n_purchasePage.purchase.typeLastName(\"lastName\");\n_purchasePage.purchase.typePostalCode(\"postalCode\");\n_purchasePage.purchase.clickContinueCheckoutBtn();\ncy.wait(5000);\n// Checkout paso 2: Resumen de compra y validación de suma correcta de los precios\n_purchasePage.purchase.getSummaryInfo().should(\"be.visible\");\ncy.wait(5000);\ncy.verifyOrderTotals();",
+              "err": {},
+              "uuid": "ac7156a0-1085-4bfd-b53c-8d8f2cd6daca",
+              "parentUUID": "69a126d9-197d-40ba-9bc9-7096680b33b4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Confirmar la compra",
+              "fullTitle": "Compra Confirmar la compra",
+              "timedOut": null,
+              "duration": 5285,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_purchasePage.purchase.clickFinish();\ncy.wait(5000);\n// Validamos que la compra haya sido confirmada\n_purchasePage.purchase.getCheckoutCompleteContainer().should(\"be.visible\");\n// Validamos que el carrito quedó vacío\n_homePage.home.getCartIconCounter().should(\"not.exist\");",
+              "err": {},
+              "uuid": "04b6bb6f-e69c-48a5-9feb-28d0d7d80435",
+              "parentUUID": "69a126d9-197d-40ba-9bc9-7096680b33b4",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "34e6d9a1-6755-4b33-b841-e7d5db43fdbe",
+            "ac03c7e4-5802-40a4-97d9-f7f97712c44e",
+            "8f8cf664-8635-409e-bed2-837d187cbf61",
+            "8313d1c7-c1e9-481d-89a2-0901f8248c0e",
+            "1acd69c4-22e6-49f7-a63b-3605376653e0",
+            "ac7156a0-1085-4bfd-b53c-8d8f2cd6daca",
+            "04b6bb6f-e69c-48a5-9feb-28d0d7d80435"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 37386,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "report",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "cleanReporterJson": false,
+        "html": true,
+        "json": true,
+        "reportFilename": "report",
+        "embeddedScreenshots": true,
+        "inlineAssets": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
