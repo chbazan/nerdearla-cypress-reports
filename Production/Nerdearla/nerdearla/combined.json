@@ -12,13 +12,13 @@
     "hasOther": false,
     "skipped": 0,
     "hasSkipped": false,
-    "start": "2025-09-21T21:35:02.152Z",
-    "end": "2025-09-21T21:35:17.238Z",
-    "duration": 15086
+    "start": "2025-09-21T21:38:42.362Z",
+    "end": "2025-09-21T21:39:01.662Z",
+    "duration": 19300
   },
   "results": [
     {
-      "uuid": "bde1f95a-d701-4e27-bdf9-9f43a900043a",
+      "uuid": "0c6227b0-e9a9-4a7c-9b2a-1a92464b8600",
       "title": "",
       "fullFile": "cypress/e2e/nerdearla/01_login.cy.js",
       "file": "cypress/e2e/nerdearla/01_login.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "8c673234-9f1e-4bbf-88d1-bdba16a6e375",
+          "uuid": "9ddd6bd4-0c55-4f4f-bf03-3ab011d7f45c",
           "title": "Login",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Login y preseteo de datos",
               "fullTitle": "Login Login y preseteo de datos",
               "timedOut": null,
-              "duration": 1300,
+              "duration": 1303,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "//cy.loginPOM(); vamos a usar este comando primero para mostrar la diferencia con session\ncy.loginSession();",
               "err": {},
-              "uuid": "e966aef9-6469-4093-85d9-f4502a9b6214",
-              "parentUUID": "8c673234-9f1e-4bbf-88d1-bdba16a6e375",
+              "uuid": "cc9b5a7a-c139-4048-add4-7d05f7ed8990",
+              "parentUUID": "9ddd6bd4-0c55-4f4f-bf03-3ab011d7f45c",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "e966aef9-6469-4093-85d9-f4502a9b6214"
+            "cc9b5a7a-c139-4048-add4-7d05f7ed8990"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1300,
+          "duration": 1303,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -76,7 +76,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "e5e54b64-3e16-4538-911d-0f232f0fbf9f",
+      "uuid": "b85361cc-b5c8-42ab-b6be-908ffd3b96f4",
       "title": "",
       "fullFile": "cypress/e2e/nerdearla/home.cy.js",
       "file": "cypress/e2e/nerdearla/home.cy.js",
@@ -85,7 +85,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "20ac976d-be17-4485-a28e-a894b055b984",
+          "uuid": "aa1e795b-a5ad-41b6-9791-9834baf3cbc1",
           "title": "Home",
           "fullFile": "",
           "file": "",
@@ -105,8 +105,8 @@
               "context": null,
               "code": "cy.loginSession();",
               "err": {},
-              "uuid": "91fdc948-ea03-417f-b13b-857d5639dc5f",
-              "parentUUID": "20ac976d-be17-4485-a28e-a894b055b984",
+              "uuid": "2f574739-3c10-4752-8930-8f1bfcac5218",
+              "parentUUID": "aa1e795b-a5ad-41b6-9791-9834baf3cbc1",
               "isHook": false,
               "skipped": false
             },
@@ -114,7 +114,7 @@
               "title": "Ingreso al home",
               "fullTitle": "Home Ingreso al home",
               "timedOut": null,
-              "duration": 276,
+              "duration": 442,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -123,8 +123,8 @@
               "context": null,
               "code": "cy.visit(`https://www.saucedemo.com/v1/inventory.html`);\n_homePage.home.getInventoryItem().should('be.visible');",
               "err": {},
-              "uuid": "4e0fb68d-70ff-42b1-a207-23ed0335951e",
-              "parentUUID": "20ac976d-be17-4485-a28e-a894b055b984",
+              "uuid": "0e7bf108-4ff4-455f-82c4-29b67fbd79f2",
+              "parentUUID": "aa1e795b-a5ad-41b6-9791-9834baf3cbc1",
               "isHook": false,
               "skipped": false
             },
@@ -132,7 +132,7 @@
               "title": "Navegabilidad entre items mientras se añaden al carrito",
               "fullTitle": "Home Navegabilidad entre items mientras se añaden al carrito",
               "timedOut": null,
-              "duration": 1966,
+              "duration": 2442,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -141,8 +141,8 @@
               "context": null,
               "code": "cy.addAllItemsToCart();",
               "err": {},
-              "uuid": "a42cb9ae-969b-4f11-aae0-4cc29e41e1b9",
-              "parentUUID": "20ac976d-be17-4485-a28e-a894b055b984",
+              "uuid": "82b4f93b-6a55-4f16-91ec-7c01928ceb3f",
+              "parentUUID": "aa1e795b-a5ad-41b6-9791-9834baf3cbc1",
               "isHook": false,
               "skipped": false
             },
@@ -150,7 +150,7 @@
               "title": "Eliminar todos los items del carrito",
               "fullTitle": "Home Eliminar todos los items del carrito",
               "timedOut": null,
-              "duration": 472,
+              "duration": 515,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -159,23 +159,23 @@
               "context": null,
               "code": "// Validamos si el carrito tiene items\n_homePage.home.getCartIcon().then($badge => {\n  if ($badge.length > 0) {\n    cy.log(`Eliminando ${$badge.text()} items del carrito`);\n    // Click en todos los botones Remove visibles\n    _homePage.home.getRemoveBtn().should(\"be.visible\").click({\n      multiple: true\n    });\n  }\n});\n// Validamos que el carrito quedó vacío (el contador ya no existe)\n_homePage.home.getCartIconCounter().should(\"not.exist\");",
               "err": {},
-              "uuid": "b94f2f70-a5a3-45c1-8b99-e9fa5d5f6dad",
-              "parentUUID": "20ac976d-be17-4485-a28e-a894b055b984",
+              "uuid": "6227d01d-eeb7-4e08-ac63-66df2c511d66",
+              "parentUUID": "aa1e795b-a5ad-41b6-9791-9834baf3cbc1",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "91fdc948-ea03-417f-b13b-857d5639dc5f",
-            "4e0fb68d-70ff-42b1-a207-23ed0335951e",
-            "a42cb9ae-969b-4f11-aae0-4cc29e41e1b9",
-            "b94f2f70-a5a3-45c1-8b99-e9fa5d5f6dad"
+            "2f574739-3c10-4752-8930-8f1bfcac5218",
+            "0e7bf108-4ff4-455f-82c4-29b67fbd79f2",
+            "82b4f93b-6a55-4f16-91ec-7c01928ceb3f",
+            "6227d01d-eeb7-4e08-ac63-66df2c511d66"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 2811,
+          "duration": 3496,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -191,7 +191,7 @@
       "_timeout": 2000
     },
     {
-      "uuid": "235770dd-50f5-4452-8c51-443bb968e57f",
+      "uuid": "56965982-ed3b-4929-8eb8-d10351052520",
       "title": "",
       "fullFile": "cypress/e2e/nerdearla/purchase.cy.js",
       "file": "cypress/e2e/nerdearla/purchase.cy.js",
@@ -200,7 +200,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "77f3c2fb-7719-4b09-8eb6-affd45ba4ca9",
+          "uuid": "2d27ef72-0fe7-4c8d-8ddc-932bf68582b2",
           "title": "Compra",
           "fullFile": "",
           "file": "",
@@ -211,7 +211,7 @@
               "title": "Login",
               "fullTitle": "Compra Login",
               "timedOut": null,
-              "duration": 102,
+              "duration": 240,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -220,8 +220,8 @@
               "context": null,
               "code": "cy.loginSession();",
               "err": {},
-              "uuid": "a53bc9ae-18d1-47fd-9b0a-9c745571d9ae",
-              "parentUUID": "77f3c2fb-7719-4b09-8eb6-affd45ba4ca9",
+              "uuid": "7fda47f2-dbba-4a2d-8f76-8bc096cc4a61",
+              "parentUUID": "2d27ef72-0fe7-4c8d-8ddc-932bf68582b2",
               "isHook": false,
               "skipped": false
             },
@@ -229,7 +229,7 @@
               "title": "Ingreso al home",
               "fullTitle": "Compra Ingreso al home",
               "timedOut": null,
-              "duration": 275,
+              "duration": 452,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -238,8 +238,8 @@
               "context": null,
               "code": "cy.visit(`https://www.saucedemo.com/v1/inventory.html`);\n_homePage.home.getInventoryItem().should('be.visible');",
               "err": {},
-              "uuid": "8f999393-2f2e-4c80-9aed-78857c16abc2",
-              "parentUUID": "77f3c2fb-7719-4b09-8eb6-affd45ba4ca9",
+              "uuid": "5edff77e-1e53-4f12-b2fa-8067e08311aa",
+              "parentUUID": "2d27ef72-0fe7-4c8d-8ddc-932bf68582b2",
               "isHook": false,
               "skipped": false
             },
@@ -247,7 +247,7 @@
               "title": "Ingreso al carrito vacío",
               "fullTitle": "Compra Ingreso al carrito vacío",
               "timedOut": null,
-              "duration": 196,
+              "duration": 364,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -256,8 +256,8 @@
               "context": null,
               "code": "// Ingresar al carrito sin tener items añadidos\n_homePage.home.clickCartIcon();\n// Volver al home\n_homePage.home.clickContinueShopping();\n_homePage.home.getInventoryItem().should(\"be.visible\");",
               "err": {},
-              "uuid": "6cb02c13-f39e-4c54-9c62-6bd67bd0ce7e",
-              "parentUUID": "77f3c2fb-7719-4b09-8eb6-affd45ba4ca9",
+              "uuid": "8e8f0ec2-fa63-4bf0-8217-a7c49d569730",
+              "parentUUID": "2d27ef72-0fe7-4c8d-8ddc-932bf68582b2",
               "isHook": false,
               "skipped": false
             },
@@ -265,7 +265,7 @@
               "title": "Agregar todos los items al carrito",
               "fullTitle": "Compra Agregar todos los items al carrito",
               "timedOut": null,
-              "duration": 465,
+              "duration": 618,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -274,8 +274,8 @@
               "context": null,
               "code": "_homePage.home.getAddToCartBtn().should(\"be.visible\").click({\n  multiple: true\n});",
               "err": {},
-              "uuid": "4d11dcd2-9bbd-4860-be68-244ab52f36c4",
-              "parentUUID": "77f3c2fb-7719-4b09-8eb6-affd45ba4ca9",
+              "uuid": "1675d8fa-1310-4a98-83ff-39e95228bba0",
+              "parentUUID": "2d27ef72-0fe7-4c8d-8ddc-932bf68582b2",
               "isHook": false,
               "skipped": false
             },
@@ -283,7 +283,7 @@
               "title": "Ingresar al carrito lleno",
               "fullTitle": "Compra Ingresar al carrito lleno",
               "timedOut": null,
-              "duration": 83,
+              "duration": 142,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -292,8 +292,8 @@
               "context": null,
               "code": "// Ingresar al carrito teniendo todos los items añadidos\n_homePage.home.clickCartIcon();",
               "err": {},
-              "uuid": "3bd343c3-ee3c-4767-b183-a00e91da3df6",
-              "parentUUID": "77f3c2fb-7719-4b09-8eb6-affd45ba4ca9",
+              "uuid": "5207a512-96da-425b-9ca8-0b991b8e34da",
+              "parentUUID": "2d27ef72-0fe7-4c8d-8ddc-932bf68582b2",
               "isHook": false,
               "skipped": false
             },
@@ -301,7 +301,7 @@
               "title": "Checkout de la compra",
               "fullTitle": "Compra Checkout de la compra",
               "timedOut": null,
-              "duration": 943,
+              "duration": 895,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -310,8 +310,8 @@
               "context": null,
               "code": "// Checkout paso 1: Formulario de datos\n_purchasePage.purchase.clickCheckoutBtn();\n_purchasePage.purchase.typeFirstName(\"testName\");\n_purchasePage.purchase.typeLastName(\"lastName\");\n_purchasePage.purchase.typePostalCode(\"postalCode\");\n_purchasePage.purchase.clickContinueCheckoutBtn();\n// Checkout paso 2: Resumen de compra y validación de suma correcta de los precios\n_purchasePage.purchase.getSummaryInfo().should(\"be.visible\");\ncy.verifyOrderTotals();",
               "err": {},
-              "uuid": "ce180b70-fdb1-4c3b-80b4-377eb931492c",
-              "parentUUID": "77f3c2fb-7719-4b09-8eb6-affd45ba4ca9",
+              "uuid": "a14f223c-fb3e-4892-bf0b-99725ff3bfe7",
+              "parentUUID": "2d27ef72-0fe7-4c8d-8ddc-932bf68582b2",
               "isHook": false,
               "skipped": false
             },
@@ -319,7 +319,7 @@
               "title": "Confirmar la compra",
               "fullTitle": "Compra Confirmar la compra",
               "timedOut": null,
-              "duration": 138,
+              "duration": 96,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -328,26 +328,26 @@
               "context": null,
               "code": "_purchasePage.purchase.clickFinish();\n// Validamos que la compra haya sido confirmada\n_purchasePage.purchase.getCheckoutCompleteContainer().should(\"be.visible\");\n// Validamos que el carrito quedó vacío\n_homePage.home.getCartIconCounter().should(\"not.exist\");",
               "err": {},
-              "uuid": "2eef1063-da3d-4c0a-931d-6dd928eecdaa",
-              "parentUUID": "77f3c2fb-7719-4b09-8eb6-affd45ba4ca9",
+              "uuid": "9531a00a-f72f-43b2-b220-f4915b2f6b46",
+              "parentUUID": "2d27ef72-0fe7-4c8d-8ddc-932bf68582b2",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "a53bc9ae-18d1-47fd-9b0a-9c745571d9ae",
-            "8f999393-2f2e-4c80-9aed-78857c16abc2",
-            "6cb02c13-f39e-4c54-9c62-6bd67bd0ce7e",
-            "4d11dcd2-9bbd-4860-be68-244ab52f36c4",
-            "3bd343c3-ee3c-4767-b183-a00e91da3df6",
-            "ce180b70-fdb1-4c3b-80b4-377eb931492c",
-            "2eef1063-da3d-4c0a-931d-6dd928eecdaa"
+            "7fda47f2-dbba-4a2d-8f76-8bc096cc4a61",
+            "5edff77e-1e53-4f12-b2fa-8067e08311aa",
+            "8e8f0ec2-fa63-4bf0-8217-a7c49d569730",
+            "1675d8fa-1310-4a98-83ff-39e95228bba0",
+            "5207a512-96da-425b-9ca8-0b991b8e34da",
+            "a14f223c-fb3e-4892-bf0b-99725ff3bfe7",
+            "9531a00a-f72f-43b2-b220-f4915b2f6b46"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 2202,
+          "duration": 2807,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
