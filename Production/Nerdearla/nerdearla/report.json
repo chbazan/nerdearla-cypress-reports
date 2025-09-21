@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2025-09-21T17:29:16.494Z",
-    "end": "2025-09-21T17:29:20.050Z",
-    "duration": 3556,
+    "start": "2025-09-21T17:37:19.497Z",
+    "end": "2025-09-21T17:37:23.447Z",
+    "duration": 3950,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "5dacd25c-1f37-4c33-9f95-9ecc97a8f438",
+      "uuid": "118bd4b2-aaac-49b4-96a9-b38ac3f96dce",
       "title": "",
       "fullFile": "cypress/e2e/nerdearla/01_login.cy.js",
       "file": "cypress/e2e/nerdearla/01_login.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "03525e52-4811-4c8b-ae41-dc40b04de373",
+          "uuid": "8673e7cb-a8a0-4ff7-aaab-4738c2ff398f",
           "title": "Login",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Login y preseteo de datos",
               "fullTitle": "Login Login y preseteo de datos",
               "timedOut": null,
-              "duration": 1424,
+              "duration": 1586,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "//cy.loginPOM(); vamos a usar este comando primero para mostrar la diferencia con session\ncy.loginSession();",
               "err": {},
-              "uuid": "c2d3336d-094b-4143-8efc-92021fd5e0bd",
-              "parentUUID": "03525e52-4811-4c8b-ae41-dc40b04de373",
+              "uuid": "04194708-f304-4522-ac29-453bc5fb2ac6",
+              "parentUUID": "8673e7cb-a8a0-4ff7-aaab-4738c2ff398f",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "c2d3336d-094b-4143-8efc-92021fd5e0bd"
+            "04194708-f304-4522-ac29-453bc5fb2ac6"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 1424,
+          "duration": 1586,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
